@@ -1,0 +1,338 @@
+* {
+margin:0;
+padding:0;
+box-sizing:0;  
+font-family: 'Roboto', sans-serif;
+}
+
+header{
+    padding: 16px 0;
+    background-color: #ebecf0;
+}
+
+header h1{
+    font-family: lindsey-signature, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 24px;
+}
+
+header nav li a,
+section p,
+section h2,
+section h3,
+section strong,
+header button{
+    font-family: new-zen, sans-serif;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+}
+
+header nav li a:hover{
+    text-decoration: underline #f5c5c5;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-flex{
+    display: flex;
+}
+
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section{
+    padding: 24px 0;
+    text-align: justify;
+}
+
+section .container{
+    align-items: flex-start;
+}
+
+section h2{
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+section h3{
+    font-size: 18px;
+
+}
+
+section p{
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+section p b{
+    color: #EFB810;
+}
+
+.sobre-loja img{
+    max-width: 280px;
+    margin-right: 32px;
+}
+
+.produtos-loja ul{
+    list-style: none;
+}
+
+.produtos-loja li{
+    max-width: 30%;
+    margin-right: 16px;
+}
+
+.produtos-loja li img{
+    width: 280px;
+    height: 280px;
+}
+
+.produtos-loja li p{
+    margin-top: 16px;
+    color: gray;
+}
+
+.produtos-loja li button{
+    background-color:#B56473;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    font-size:16px;
+    padding: 8px 0;
+    border:none;
+    cursor:pointer;
+}
+
+.price{
+    margin:16px 0;
+    display: block;
+}
+
+.price del{
+    text-decoration: line-through #f5c5c5;
+    color: #ccc;
+    font-size: 14px;
+}
+
+/*layout celular */
+@media screen and (max-width:640px){
+    header{
+        width: 100%;
+        padding: 10px 0;
+        background-color: #ebecf0;
+        text-align: center;
+    }
+
+    header .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    header nav li{
+        display: inline;
+        font-size: 20px;
+    }
+    header h1{
+        text-align: center;
+        width: 100%;
+    }
+
+    section{
+        max-width: 80%;
+        padding: 5% 10%;
+        text-align: justify;
+        margin-top: 16px;
+    }
+
+    section .container{
+        align-items: block;
+        display: block;
+    }
+
+    section h2{
+        margin-bottom: 16px;
+        font-size: 24px;
+    }
+
+    section h3{
+        font-size: 16px;
+        text-align: center;
+
+    }
+
+    section p{
+        margin-bottom: 8px;
+        font-weight: 400;
+    }
+
+    section p b{
+        color: #EFB810;
+    }
+
+    .sobre-loja img{
+        max-width: 80%;
+        padding: 0 10%;
+        margin-bottom: 16px;
+    }
+
+    .produtos-loja ul{
+        list-style: none;
+        display: block;
+    }
+
+    .produtos-loja li{
+        max-width: 80%;
+        padding: 0 10%;
+    }
+
+    .produtos-loja li img{
+        margin-top: 16px;
+        width: 280px;
+        height: 280px;
+    }
+
+    .produtos-loja li p{
+        margin-top: 16px;
+        color: gray;
+    }
+
+    .produtos-loja li button{
+        background-color:#B56473;
+        color: #fff;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+        font-size:16px;
+        padding: 8px 0;
+        border:none;
+        cursor:pointer;
+        margin-bottom: 16px;
+    }
+
+    .price{
+        margin:16px 0;
+        display: block;
+    }
+
+    .price del{
+        text-decoration: line-through #f5c5c5;
+        color: #ccc;
+        font-size: 14px;
+    }
+
+}
+
+
+/* layout tablet */
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    header{
+        padding: 16px 0;
+        width: 100%;
+        background-color: #ebecf0;
+    }
+
+    header{
+        padding: 24px 24px;
+        background-color: #ebecf0;
+    }
+    
+    header h1{
+        font-family: lindsey-signature, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3em;
+    }
+    
+    header nav li{
+        display: inline;
+        margin-left: 16px;
+        font-size: 20px;
+    }
+    
+    .container{
+        max-width: 90%;
+    }
+
+    header nav li a,
+    section p,
+    section h2,
+    section h3,
+    section strong,
+    header button{
+        font-family: new-zen, sans-serif;
+    }
+    
+    header nav li a{
+        text-decoration: none;
+        color: inherit;
+        font-weight: 600;
+    }
+    
+    header nav li a:hover{
+        text-decoration: underline #f5c5c5;
+    }
+    
+    section{
+        max-width: 80%;
+        padding: 5% 10%;
+        text-align: justify;
+        margin-top: 16px;
+    }
+
+    section .container{
+        align-items: block;
+        display: block;
+    }
+
+    .sobre-loja img{
+        max-width: 80%;
+        padding: 0 10%;
+        margin-bottom: 16px;
+    }
+
+    .produtos-loja ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns:repeat(2,49%);
+    }
+
+    .produtos-loja ul li h3,
+    .produtos-loja ul li p,
+    .produtos-loja ul li button{
+        width: 260px;
+    }
+
+    .produtos-loja li img{
+        margin-top: 16px;
+        width: 280px;
+        height: 280px;
+    }
+
+    .price,
+    .price del{
+        margin:16px 0;
+        display: block;
+    }
+
+}
